@@ -154,7 +154,7 @@ function create() {
                 score += 1
                 ballGroups.set(ballgr, 1)
                 ballgr.setTint("0x33dd33")
-                // ballgr.setImmovable(false)
+                ballgr.setImmovable(false)
                 scoreBoard.setText('Score: ' + score)
             }
         }

@@ -11,7 +11,7 @@ const BLAZEPOSE_CONFIG = {
  };
 const MOVENET_CONFIG = {
    maxPoses: 1,
-   modelType: posedetection.movenet.modelType.SINGLEPOSE_LIGHTNING,
+   modelType: posedetection.movenet.modelType.SINGLEPOSE_THUNDER,
    scoreThreshold: 0.25,
    customModel: '',
    enableTracking: false,
