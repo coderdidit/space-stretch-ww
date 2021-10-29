@@ -55941,7 +55941,7 @@ var handlePoseToGameEvents = function handlePoseToGameEvents(pose) {
 }; // fps for predictions
 
 
-var fps = 4;
+var fps = 3;
 var then = Date.now();
 var now, delta;
 var interval = 1000 / fps;
@@ -56026,7 +56026,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62934" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63180" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
