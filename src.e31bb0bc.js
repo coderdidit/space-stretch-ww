@@ -55260,10 +55260,11 @@ var BLAZEPOSE_CONFIG = {
 };
 var MOVENET_CONFIG = {
   maxPoses: 1,
-  modelType: posedetection.movenet.modelType.SINGLEPOSE_THUNDER,
-  scoreThreshold: 0.3,
+  modelType: posedetection.movenet.modelType.SINGLEPOSE_LIGHTNING,
+  scoreThreshold: 0.25,
   customModel: '',
-  enableTracking: false
+  enableTracking: false,
+  render3D: false
 };
 var moveNetModel = posedetection.SupportedModels.MoveNet;
 var blazePoseModel = posedetection.SupportedModels.BlazePose;
@@ -56026,7 +56027,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63180" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63319" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
